@@ -1,0 +1,23 @@
+body {
+	margin: 0;
+}
+
+main {
+	margin: 1rem;
+}
+
+header {
+    background: blueviolet;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    display: flex;
+    box-sizing: border-box;
+}
+header > a {
+    color: chartreuse;
+    margin-right: 5rem;
+}

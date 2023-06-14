@@ -3,12 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="{{ url_for('static', filename='base.css') }}" rel="stylesheet">
     <title>Friendly Chainsaw</title>
 </head>
 <body>
-<!-- todo: header -->
-{% block content %}
-{% endblock %}
+<header>
+    <a href="{{ url_for('index') }}">
+        <svg xmlns="http://www.w3.org/2000/svg" width="65" height="80">
+            <path d="M10,10 A40,40 0 0 1 50,10 L50,10 L50,70 A40,40 0 0 1 10,70 Z" stroke="white"
+                  stroke-width="2"></path>
+            <circle cx="50" cy="40" r="10" fill="white"></circle>
+        </svg>
+    </a>
+    <a href="{{ url_for('about') }}">
+        <h2>About</h2>
+    </a>
+</header>
+<main>
+    {% block content %}
+    {% endblock %}
+</main>
 <!-- todo: footer -->
 </body>
 </html>
